@@ -1,66 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bayhub - Espaços Premium</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bayhub – Espaços Elegantes</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="images/logo.png" alt="Bayhub Logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#salas">Salas</a></li>
-                <li><a href="#reservas">Reservas</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <div class="logo">Bayhub</div>
+    <nav>
+      <a href="#espacos">Espaços</a>
+      <a href="#reserva">Reservas</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
 
-    <main>
-        <section id="salas">
-            <div class="sala">
-                <h2>Sala de Reuniões</h2>
-                <img src="images/sala_reuniao.jpg" alt="Sala de Reuniões">
-                <p>Espaço intimista para até 12 pessoas, com cafeteira e frigobar.</p>
-            </div>
-            <div class="sala">
-                <h2>Sala de Eventos</h2>
-                <img src="images/sala_evento.jpg" alt="Sala de Eventos">
-                <p>Espaço para eventos de até 100 pessoas, com tela de projeção e TV. Opções de coffee break disponíveis.</p>
-            </div>
-        </section>
+  <section class="hero">
+    <h1>Espaços Elegantes para Reuniões e Eventos</h1>
+    <p>Infraestrutura premium em São Caetano do Sul com alto padrão de conforto, privacidade e tecnologia.</p>
+  </section>
 
-        <section id="reservas">
-            <h2>Formulário de Reserva</h2>
-            <form action="/reservar" method="post">
-                <label for="nome">Nome Completo:</label>
-                <input type="text" id="nome" name="nome" required>
+  <section class="espacos" id="espacos">
+    <h2>Nossos Espaços</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="assets/sala1.jpg" alt="Sala de Reunião 1">
+        <h3>Sala de Reunião 1</h3>
+        <p>Capacidade para 6 pessoas. Sofás, mesa executiva, TV 55", Wi-Fi.</p>
+      </div>
+      <div class="card">
+        <img src="assets/sala2.jpg" alt="Sala de Reunião 2">
+        <h3>Sala de Reunião 2</h3>
+        <p>Espaço para 9 pessoas. Videoconferência e ambiente climatizado.</p>
+      </div>
+      <div class="card">
+        <img src="assets/auditorio.jpg" alt="Auditório Bayhub">
+        <h3>Auditório Bayhub</h3>
+        <p>Até 100 pessoas. Estrutura com palco, acústica premium e iluminação cênica.</p>
+      </div>
+    </div>
+  </section>
 
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
+  <section class="reserva" id="reserva">
+    <h2>Reservar um Espaço</h2>
+    <form action="https://formspree.io/f/your-id" method="POST">
+      <input type="text" name="nome" placeholder="Nome completo" required>
+      <input type="email" name="email" placeholder="E-mail" required>
+      <select name="espaco" required>
+        <option value="">Escolha o espaço</option>
+        <option value="sala1">Sala de Reunião 1</option>
+        <option value="sala2">Sala de Reunião 2</option>
+        <option value="auditorio">Auditório</option>
+      </select>
+      <input type="date" name="data" required>
+      <button type="submit">Solicitar Reserva</button>
+    </form>
+  </section>
 
-                <label for="sala">Escolha a Sala:</label>
-                <select id="sala" name="sala" required>
-                    <option value="reuniao">Sala de Reuniões</option>
-                    <option value="evento">Sala de Eventos</option>
-                </select>
+  <section class="sobre" id="sobre">
+    <h2>Sobre a Bayhub</h2>
+    <p style="text-align: center; max-width: 700px; margin: auto;">
+      A Bayhub oferece um ambiente refinado para empresas exigentes. Nossos espaços são projetados para proporcionar conforto, funcionalidade e uma imagem profissional de alto padrão.
+    </p>
+  </section>
 
-                <label for="data">Data da Reserva:</label>
-                <input type="date" id="data" name="data" required>
+  <section class="contato" id="contato">
+    <h2>Contato</h2>
+    <p style="text-align: center;">📞 (11) 99999-0000 | ✉️ contato@bayhub.com.br</p>
+    <p style="text-align: center;">📍 Av. Central, 125 – São Caetano do Sul, SP</p>
+  </section>
 
-                <label for="hora">Hora da Reserva:</label>
-                <input type="time" id="hora" name="hora" required>
-
-                <button type="submit">Reservar</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Bayhub - Todos os direitos reservados.</p>
-    </footer>
+  <footer>
+    &copy; 2025 Bayhub – Excelência em Espaços Corporativos.
+  </footer>
 </body>
 </html>
