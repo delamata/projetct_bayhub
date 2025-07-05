@@ -1,0 +1,65 @@
+
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background-color: #f8f2eb;
+  color: #3e2f23;
+}
+header {
+  background-color: #f4eadc;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #5c4028;
+  font-weight: bold;
+}
+nav a:hover {
+  color: #a37e58;
+}
+.hero, .espacos, .reserva, .sobre, .contato {
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: auto;
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.card {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.card img {
+  width: 100%;
+  border-radius: 6px;
+}
+form input, form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1rem;
+}
+form button {
+  width: 100%;
+  padding: 12px;
+  background: #7d5c3b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+footer {
+  background: #f4eadc;
+  text-align: center;
+  padding: 1rem;
+}
